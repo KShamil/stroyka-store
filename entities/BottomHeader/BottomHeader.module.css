@@ -1,0 +1,35 @@
+.wrapper {
+    width: 100%;
+    min-height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+.content {
+    width: 1160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.list li {
+    color: #454950;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.list li:hover {
+    color: #FCEC41;
+}

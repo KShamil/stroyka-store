@@ -1,0 +1,20 @@
+.wrapper {
+    width: 180px;
+    height: 124px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #E8E9EA;
+    background: #FFFFFF;
+    border-radius: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.wrapper:hover {
+    border: 1px solid gray;
+}
+
+.image {
+    overflow: hidden;
+}

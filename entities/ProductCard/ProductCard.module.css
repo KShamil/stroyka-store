@@ -1,0 +1,42 @@
+.wrapper {
+    position: relative;
+    width: 278px;
+    min-height: 416px;
+    border: 1px solid #E8E9EA;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.info {
+    background: #FFFFFF;
+    padding: 16px;
+    border-top: 1px solid #E8E9EA;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #2F323A;
+    word-wrap: break-word;
+}
+
+.price {
+    position: absolute;
+    left: 16px;
+    bottom: 80px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #171B24;
+}
+
+.btn {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+}

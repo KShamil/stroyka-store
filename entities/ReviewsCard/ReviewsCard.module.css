@@ -1,0 +1,51 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 15px;
+    width: 376px;
+    height: 365px;
+    background: #FFFFFF;
+    border: 1px solid #E8E9EA;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.quotes {
+    width: 32px;
+    height: 24px;
+}
+
+.reviews {
+    width: 100%;
+}
+
+.reviews p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #2F323A;
+}
+
+.date {
+    width: 100%;
+}
+
+.date span {
+    font-weight: 500;
+    font-size: 15px;
+    color: #8B8D92;
+}

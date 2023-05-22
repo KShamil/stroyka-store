@@ -1,0 +1,32 @@
+.wrapper {
+    width: 180px;
+    height: 180px;
+    background: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.wrapper:hover {
+    background: #FCEC41;
+}
+
+.wrapper h6 {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #2F323A;
+}
+
+.img {
+    transition: 0.5s;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}

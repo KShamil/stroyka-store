@@ -1,0 +1,32 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    position: relative;
+    width: 1360px;
+    min-height: 420px;
+}
+
+.title {
+    width: 30%;
+    position: absolute;
+    left: 100px;
+    top: 40px;
+}
+
+.description {
+    width: 30%;
+    position: absolute;
+    left: 100px;
+    top: 176px;
+}
+
+.btn {
+    position: absolute;
+    left: 100px;
+    bottom:40px;
+}
