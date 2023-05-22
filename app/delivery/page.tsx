@@ -1,12 +1,12 @@
 import { AboutDelivery, FAQ, MakeAnOrder } from "@/widgets";
 import React from "react";
 
-export default function DeliveryPage({ ...props }): JSX.Element {
+export default function DeliveryPage(): JSX.Element {
   return (
-    <div {...props}>
+    <main>
       <AboutDelivery />
       <MakeAnOrder/>
       <FAQ/>
-    </div>
+    </main>
   );
 }
