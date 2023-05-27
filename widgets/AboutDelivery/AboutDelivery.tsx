@@ -12,7 +12,7 @@ export const AboutDelivery: FC<AboutDeliveryProps> = ({
       <div className={styles.content}>
         <div className={styles.info}>
           <Link href="/" className={styles.link}>Главная → Доставка</Link>
-          <Htag tag="h2">Доставка</Htag>
+          <Htag tag="h1">Доставка</Htag>
           <p>
             Доставка осуществляется курьерами поставщика или службой курьеров
             Достависта. Также товар можно забрать самостоятельно от поставщика
