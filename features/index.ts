@@ -5,3 +5,4 @@ export * from './PopularBrendsItems/PopularBrendsItems';
 export * from './StockCardsItems/StockCardsItems';
 export * from './ReviewsCardItems/ReviewsCardItems';
 export * from './MakeAnOrderItems/MakeAnOrderItems';
+export * from './DocumentationCardItems/DocumentationCardItems';

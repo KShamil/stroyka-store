@@ -48,3 +48,11 @@ export interface IOrderCardData {
     icon:StaticImageData,
     text:string
 }
+
+export interface IDocumentationCardData {
+    id:string,
+    img:StaticImageData,
+    title: string,
+    file: string,
+    link:string
+}

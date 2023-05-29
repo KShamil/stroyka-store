@@ -1,0 +1,46 @@
+.wrapper {
+    position: relative;
+    width: 376px;
+    min-height: 356px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border: 1px solid #E8E9EA;
+}
+
+.image {
+    width: 376px;
+    height: 208px;
+    overflow: hidden;
+}
+
+/* .info {
+    padding: 16px;
+} */
+
+.title {
+    position: absolute;
+    left: 16px;
+    bottom: 80px;
+}
+
+.title h5 {
+    font-weight: 700;
+    font-size: 18px;
+    color: #2F323A;
+}
+
+.title span {
+    font-weight: 500;
+    font-size: 16px;
+    color: #2F323A;
+    margin-bottom: 16px;
+}
+
+.btn {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+}

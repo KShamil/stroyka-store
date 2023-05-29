@@ -8,3 +8,4 @@ export * from './StockCard/StockCard';
 export * from './ReviewsCard/ReviewsCard';
 export * from './OrderCard/OrderCard';
 export * from './FaqAccordion/FaqAccordion';
+export * from './DocumentationCard/DocumentationCard';

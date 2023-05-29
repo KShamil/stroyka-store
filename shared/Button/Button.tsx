@@ -15,6 +15,7 @@ export const Button: FC<ButtonProps> = ({ className,appearance,...props }): JSX.
         [styles.allStockBtn]:appearance == 'all-stock',
         [styles.sliderBtn]:appearance == 'slider-btn',
         [styles.loadMoreBtn]:appearance == 'load-more-btn',
+        [styles.documentationCardBtn]:appearance == 'documentation-card-btn',
       })}
     ></button>
   );

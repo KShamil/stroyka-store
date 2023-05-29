@@ -9,4 +9,5 @@ export * from './AboutDelivery/AboutDelivery';
 export * from './MakeAnOrder/MakeAnOrder';
 export * from './FAQ/FAQ';
 export * from './AboutRefund/AboutRefund';
-export * from './ReturnPolicy/ReturnPolicy'
+export * from './ReturnPolicy/ReturnPolicy';
+export * from './AboutDocumentation/AboutDocumentation';

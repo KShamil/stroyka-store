@@ -32,7 +32,7 @@ export const TopHeader: FC<TopHeaderProps> = ({ ...props }): JSX.Element => {
                   </Link>
                 </li>
                 <li>
-                  <Link className={styles.link} href="">
+                  <Link className={styles.link} href="/documentation">
                     Документация
                   </Link>
                 </li>

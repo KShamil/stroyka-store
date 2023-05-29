@@ -1,5 +1,6 @@
 import {
   ICardData,
+  IDocumentationCardData,
   IHomeSliderData,
   IOrderCardData,
   IPOpularBrendsData,
@@ -58,6 +59,9 @@ import OrderIcon1 from './images/order-card-img/icon1.png';
 import OrderIcon2 from './images/order-card-img/icon2.png';
 import OrderIcon3 from './images/order-card-img/icon3.png';
 import OrderIcon4 from './images/order-card-img/icon4.png';
+import DocumentationCardImg1 from './images/documentation-card-img/img1.png'
+import DocumentationCardImg2 from './images/documentation-card-img/img2.png'
+import DocumentationCardImg3 from './images/documentation-card-img/img3.jpg'
 
 export const cardData: ICardData[] = [
   {
@@ -357,4 +361,28 @@ export const orderCardData:IOrderCardData[] = [
     icon:OrderIcon4,
     text:'Заберите из пунктов выдачи'
   },
+]
+
+export const documentationCardData:IDocumentationCardData[] = [
+  {
+    id:uuidv4(),
+    img:DocumentationCardImg1,
+    title:'Оферта «Безопасная сделка»',
+    file:'PDF · 10 МБ',
+    link:'Скачать'
+  },
+  {
+    id:uuidv4(),
+    img:DocumentationCardImg2,
+    title:'Политика конфиденциальности',
+    file:'PDF · 10 МБ',
+    link:'Скачать'
+  },
+  {
+    id:uuidv4(),
+    img:DocumentationCardImg3,
+    title:'Оферта доставки',
+    file:'PDF · 10 МБ',
+    link:'Скачать'
+  }
 ]
