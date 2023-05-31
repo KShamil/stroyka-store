@@ -11,3 +11,4 @@ export * from './FAQ/FAQ';
 export * from './AboutRefund/AboutRefund';
 export * from './ReturnPolicy/ReturnPolicy';
 export * from './AboutDocumentation/AboutDocumentation';
+export * from './AboutContacts/AboutContacts';
