@@ -12,7 +12,7 @@ export const AboutContacts: FC<AboutContactsProps> = ({
       <section {...props} className={styles.wrapper}>
         <div className={styles.content}>
           <div className={styles.top}>
-            <Link className={styles.link} href="/contacts">Главная → Контакты</Link>
+            <Link className={styles.link} href="/">Главная → Контакты</Link>
             <Htag tag="h1">Контакты</Htag>
             <div className={styles.map}>
               <iframe

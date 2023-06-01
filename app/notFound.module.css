@@ -1,0 +1,24 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 36px;
+    gap: 8px;
+    width: 580px;
+    height: 310px;
+    border: 1px solid #D1D1D3;
+    text-align: center;
+}
+
+.btn {
+    margin-top: 16px;
+}

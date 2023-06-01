@@ -122,3 +122,15 @@
     background: #2F323A;
     color: #FFFFFF;
 }
+
+.notFoundBtn {
+    padding: 12px 24px;
+    width: 213px;
+    height: 48px;
+    background: #FCEC41;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 136%;
+    color: #171B24;
+    white-space: nowrap;
+}
