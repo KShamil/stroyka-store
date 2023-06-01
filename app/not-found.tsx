@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./notFound.module.css";
 import { Button, Htag } from "@/shared";
+import Link from "next/link";
+
 
 export default function NotFoundPage({ ...props }): JSX.Element {
   return (
@@ -12,7 +14,9 @@ export default function NotFoundPage({ ...props }): JSX.Element {
           <p>
             Неправильно набран адрес или такая страница больше не существует
           </p>
-          <Button appearance='not-found-btn' className={styles.btn}>Перейти на главную</Button>
+          <Button appearance="not-found-btn" className={styles.btn}>
+            <Link href="/">Перейти на главную</Link>
+          </Button>
         </div>
       </main>
       ;
