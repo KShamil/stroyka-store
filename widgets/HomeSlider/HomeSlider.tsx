@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { FC } from "react";
 import { HomeSliderProps } from "./HomeSlider.props";
@@ -9,10 +9,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import styles from "./HomeSlider.module.css";
-import { homeSliderData } from '@/data/data';
-import { HomeSliderItems } from '@/features';
-import { SlidePrevButton } from '@/shared/SlidePrevButton/SlidePrevButton';
-import { SlideNextButton } from '@/shared/SlideNextButton/SlideNextButton';
+import { homeSliderData } from "@/data/data";
+import { SlidePrevButton } from "@/shared/SlidePrevButton/SlidePrevButton";
+import { SlideNextButton } from "@/shared/SlideNextButton/SlideNextButton";
+import { HomeSliderItems } from "@/features/HomeSliderItems/HomeSliderItems";
 
 export const HomeSlider: FC<HomeSliderProps> = ({ ...props }): JSX.Element => {
   return (

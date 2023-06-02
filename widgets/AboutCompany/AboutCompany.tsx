@@ -1,7 +1,8 @@
 import React, { FC } from "react";
 import { AboutCompanyProps } from "./AboutCompany.props";
 import styles from "./AboutCompany.module.css";
-import { Htag } from "@/shared";
+import { Htag } from '@/shared/Htag/Htag';
+
 
 export const AboutCompany: FC<AboutCompanyProps> = ({
   ...props

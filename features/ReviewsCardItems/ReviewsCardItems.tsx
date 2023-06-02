@@ -4,7 +4,6 @@ import React, { FC } from "react";
 import { ReviewsCardItemsProps } from "./ReviewsCardItems.props";
 import styles from "./ReviewsCardItems.module.css";
 import { reviewsCardData } from "@/data/data";
-import { Htag } from "@/shared";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import { Pagination } from "swiper";
@@ -13,7 +12,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { SlidePrevButton } from '@/shared/SlidePrevButton/SlidePrevButton';
 import { SlideNextButton } from '@/shared/SlideNextButton/SlideNextButton';
-import { ReviewsCard } from '@/entities';
+import { Htag } from '@/shared/Htag/Htag';
+import { ReviewsCard } from '@/entities/ReviewsCard/ReviewsCard';
+
 
 export const ReviewsCardItems: FC<ReviewsCardItemsProps> = ({
   ...props

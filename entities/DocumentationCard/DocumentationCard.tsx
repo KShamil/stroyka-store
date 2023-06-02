@@ -2,7 +2,8 @@ import React, { FC } from "react";
 import { DocumentationCardProps } from "./DocumentationCard.props";
 import styles from "./DocumentationCard.module.css";
 import Image from "next/image";
-import { Button } from "@/shared";
+import { Button } from '@/shared/Button/Button';
+
 
 export const DocumentationCard: FC<DocumentationCardProps> = ({
   data,

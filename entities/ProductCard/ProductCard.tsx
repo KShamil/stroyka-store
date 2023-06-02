@@ -2,7 +2,8 @@ import React, { FC } from "react";
 import { ProductCardProps } from "./ProductCard.props";
 import styles from "./ProductCard.module.css";
 import Image from "next/image";
-import { Button } from "@/shared";
+import { Button } from '@/shared/Button/Button';
+
 
 export const ProductCard: FC<ProductCardProps> = ({
   data,

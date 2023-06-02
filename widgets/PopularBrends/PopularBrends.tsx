@@ -1,7 +1,7 @@
 import React, { FC } from "react";
-import { PopularBrendsProps } from "./PopularBrends.props";
-import { PopularBrendsItems } from '@/features';
 import styles from './PopularBrends.module.css';
+import { PopularBrendsItems } from '@/features/PopularBrendsItems/PopularBrendsItems';
+import { PopularBrendsProps } from './PopularBrends.props';
 
 export const PopularBrends: FC<PopularBrendsProps> = ({
   ...props

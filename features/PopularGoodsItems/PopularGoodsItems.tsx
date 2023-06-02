@@ -4,8 +4,9 @@ import React, { FC, useState } from "react";
 import { PopularGoodsItemsProps } from "./PopularGoodsItems.props";
 import styles from "./PopularGoodsItems.module.css";
 import { cardData } from "@/data/data";
-import { ProductCard } from "@/entities";
-import { Button } from "@/shared";
+import { ProductCard } from '@/entities/ProductCard/ProductCard';
+import { Button } from '@/shared/Button/Button';
+
 
 export const PopularGoodsItems: FC<PopularGoodsItemsProps> = ({
   ...props

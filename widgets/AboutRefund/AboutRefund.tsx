@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import { AboutRefundProps } from "./AboutRefund.props";
 import styles from "./AboutRefund.module.css";
-import { Htag } from "@/shared";
 import Link from "next/link";
+import { Htag } from '@/shared/Htag/Htag';
 
 export const AboutRefund: FC<AboutRefundProps> = ({
   ...props

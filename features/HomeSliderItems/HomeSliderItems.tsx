@@ -2,7 +2,10 @@ import React, { FC } from "react";
 import { HomeSliderItemsProps } from "./HomeSliderItems.props";
 import styles from "./HomeSliderItems.module.css";
 import Image from "next/image";
-import { Button, Htag } from "@/shared";
+import { Htag } from '@/shared/Htag/Htag';
+import { Button } from '@/shared/Button/Button';
+
+
 
 export const HomeSliderItems: FC<HomeSliderItemsProps> = ({
   data,

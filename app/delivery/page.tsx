@@ -1,4 +1,6 @@
-import { AboutDelivery, FAQ, MakeAnOrder } from "@/widgets";
+import { AboutDelivery } from '@/widgets/AboutDelivery/AboutDelivery';
+import { FAQ } from '@/widgets/FAQ/FAQ';
+import { MakeAnOrder } from '@/widgets/MakeAnOrder/MakeAnOrder';
 import { Metadata } from 'next';
 
 export const metadata:Metadata = {

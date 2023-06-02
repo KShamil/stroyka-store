@@ -1,9 +1,10 @@
 import React, { FC } from "react";
 import { MakeAnOrderItemsProps } from "./MakeAnOrderItems.props";
 import styles from "./MakeAnOrderItems.module.css";
-import { Htag } from "@/shared";
 import { orderCardData } from "@/data/data";
-import { OrderCard } from "@/entities";
+import { OrderCard } from '@/entities/OrderCard/OrderCard';
+import { Htag } from '@/shared/Htag/Htag';
+
 
 export const MakeAnOrderItems: FC<MakeAnOrderItemsProps> = ({
   ...props

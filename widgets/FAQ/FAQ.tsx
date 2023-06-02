@@ -1,8 +1,9 @@
 import React, { FC } from "react";
 import { FAQProps } from "./FAQ.props";
 import styles from "./FAQ.module.css";
-import { Htag } from '@/shared';
-import { FaqAccordion } from '@/entities';
+import { FaqAccordion } from '@/entities/FaqAccordion/FaqAccordion';
+import { Htag } from '@/shared/Htag/Htag';
+
 
 export const FAQ: FC<FAQProps> = ({ ...props }): JSX.Element => {
   return (

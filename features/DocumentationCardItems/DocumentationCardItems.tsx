@@ -2,10 +2,9 @@ import React, { FC } from "react";
 import { DocumentationCardItemsProps } from "./DocumentationCardItems.props";
 import styles from "./DocumentationCardItems.module.css";
 import Link from "next/link";
-import { Htag } from "@/shared";
 import { documentationCardData } from "@/data/data";
-import { DocumentationCard } from "@/entities";
-
+import { Htag } from "@/shared/Htag/Htag";
+import { DocumentationCard } from "@/entities/DocumentationCard/DocumentationCard";
 export const DocumentationCardItems: FC<DocumentationCardItemsProps> = ({
   ...props
 }): JSX.Element => {

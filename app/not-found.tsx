@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./notFound.module.css";
-import { Button, Htag } from "@/shared";
 import Link from "next/link";
+import { Htag } from '@/shared/Htag/Htag';
+import { Button } from '@/shared/Button/Button';
 
 
 export default function NotFoundPage({ ...props }): JSX.Element {

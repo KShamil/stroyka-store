@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { StockCardProps } from "./StockCard.props";
 import styles from "./StockCard.module.css";
 import Image from "next/image";
-import { Button } from "@/shared";
+import { Button } from '@/shared/Button/Button';
 
 export const StockCard: FC<StockCardProps> = ({
   data,

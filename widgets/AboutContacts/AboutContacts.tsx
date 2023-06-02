@@ -2,7 +2,8 @@ import React, { FC } from "react";
 import { AboutContactsProps } from "./AboutContacts.props";
 import styles from "./AboutContacts.module.css";
 import Link from "next/link";
-import { Htag } from "@/shared";
+import { Htag } from '@/shared/Htag/Htag';
+
 
 export const AboutContacts: FC<AboutContactsProps> = ({
   ...props
@@ -31,6 +32,8 @@ export const AboutContacts: FC<AboutContactsProps> = ({
                   115114, г. Москва, Дербеневская набережная, д. 7, стр. 8
                 </li>
                 <li>Павелецкая</li>
+                <br />
+                <br />
                 <li>Автобусы 13, 106, 158, 184, 632</li>
                 <li>Остановка «Дербеневская наб., д. 7»</li>
               </ul>

@@ -1,10 +1,12 @@
 import React, { FC } from "react";
 import { PopularCategoriesCardItemsProps } from "./PopularCategoriesCardItems.props";
 import styles from "./PopularCategoriesCardItems.module.css";
-import { Button, Htag } from "@/shared";
 import ArrowIcon from "./Icon.svg";
 import { popularCategoriesData } from "@/data/data";
-import { PopularCategoriesCard } from "@/entities";
+import { Htag } from '@/shared/Htag/Htag';
+import { Button } from '@/shared/Button/Button';
+import { PopularCategoriesCard } from '@/entities/PopularCategoriesCard/PopularCategoriesCard';
+
 
 export const PopularCategoriesCardItems: FC<
   PopularCategoriesCardItemsProps

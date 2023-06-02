@@ -7,7 +7,10 @@ import SeacrhIcon from './searchIcon.svg';
 import ProfileIcon from './profileIcon.svg';
 import OrdersIcon from './ordersIcon.svg';
 import CartIcon from './basketIcon.svg';
-import { Button, Input, InputGroup } from "@/shared";
+import { Button } from '@/shared/Button/Button';
+import { InputGroup } from '@/shared/InputGroup/InputGroup';
+import { Input } from '@/shared/Input/Input';
+
 
 export const MiddleHeader: FC<MiddleHeaderProps> = ({
   ...props

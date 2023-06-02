@@ -1,10 +1,11 @@
 import React, { FC } from "react";
 import { PopularBrendsItemsProps } from "./PopularBrendsItems.props";
 import styles from "./PopularBrendsItems.module.css";
-import { Button, Htag } from "@/shared";
 import ArrowIcon from "./Icon.svg";
 import { popularBrendsData } from '@/data/data';
-import { PopularBrendsCard } from '@/entities';
+import { Htag } from '@/shared/Htag/Htag';
+import { Button } from '@/shared/Button/Button';
+import { PopularBrendsCard } from '@/entities/PopularBrendsCard/PopularBrendsCard';
 
 export const PopularBrendsItems: FC<PopularBrendsItemsProps> = ({
   ...props

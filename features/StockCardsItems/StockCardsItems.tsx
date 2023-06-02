@@ -1,10 +1,12 @@
 import React, { FC } from "react";
 import { StockCardsItemsProps } from "./StockCardsItems.props";
 import styles from './StockCardsItems.module.css';
-import { Button, Htag } from '@/shared';
 import ArrowIcon from './Icon.svg';
 import { stockCardData } from '@/data/data';
-import { StockCard } from '@/entities';
+import { Htag } from '@/shared/Htag/Htag';
+import { Button } from '@/shared/Button/Button';
+import { StockCard } from '@/entities/StockCard/StockCard';
+
 
 export const StockCardsItems: FC<StockCardsItemsProps> = ({
   ...props

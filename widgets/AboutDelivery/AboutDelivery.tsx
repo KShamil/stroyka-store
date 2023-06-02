@@ -2,7 +2,8 @@ import React, { FC } from "react";
 import { AboutDeliveryProps } from "./AboutDelivery.props";
 import styles from "./AboutDelivery.module.css";
 import Link from "next/link";
-import { Htag } from "@/shared";
+import { Htag } from '@/shared/Htag/Htag';
+
 
 export const AboutDelivery: FC<AboutDeliveryProps> = ({
   ...props

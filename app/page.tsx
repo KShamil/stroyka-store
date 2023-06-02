@@ -1,13 +1,12 @@
-import {
-  AboutCompany,
-  HomeSlider,
-  PopularBrends,
-  PopularCategories,
-  PopularGoods,
-  Reviews,
-  Stock,
-} from "@/widgets";
+import { AboutCompany } from '@/widgets/AboutCompany/AboutCompany';
+import { HomeSlider } from '@/widgets/HomeSlider/HomeSlider';
+import { PopularBrends } from '@/widgets/PopularBrends/PopularBrends';
+import { PopularCategories } from '@/widgets/PopularCategories/PopularCategories';
+import { PopularGoods } from '@/widgets/PopularGoods/PopularGoods';
+import { Reviews } from '@/widgets/Reviews/Reviews';
+import { Stock } from '@/widgets/Stock/Stock';
 import { Metadata } from 'next';
+
 
 export const metadata:Metadata = {
   title: "Stroyka-store - Магазин стройматериалов",

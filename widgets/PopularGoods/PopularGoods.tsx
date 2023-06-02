@@ -1,8 +1,9 @@
 import React, { FC } from "react";
 import { PopularGoodsProps } from "./PopularGoods.props";
-import { PopularGoodsItems } from "@/features";
 import styles from "./PopularGoods.module.css";
-import { Htag } from "@/shared";
+import { PopularGoodsItems } from '@/features/PopularGoodsItems/PopularGoodsItems';
+import { Htag } from '@/shared/Htag/Htag';
+
 
 export const PopularGoods: FC<PopularGoodsProps> = ({
   ...props

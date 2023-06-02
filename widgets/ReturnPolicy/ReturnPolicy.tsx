@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import { ReturnPolicyProps } from "./ReturnPolicy.props";
 import styles from "./ReturnPolicy.module.css";
-import { Htag } from "@/shared";
+import { Htag } from '@/shared/Htag/Htag';
 
 export const ReturnPolicy: FC<ReturnPolicyProps> = ({
   ...props
