@@ -10,6 +10,7 @@ import CartIcon from './basketIcon.svg';
 import { Button } from '@/shared/Button/Button';
 import { InputGroup } from '@/shared/InputGroup/InputGroup';
 import { Input } from '@/shared/Input/Input';
+import Link from 'next/link';
 
 
 export const MiddleHeader: FC<MiddleHeaderProps> = ({
@@ -31,18 +32,18 @@ export const MiddleHeader: FC<MiddleHeaderProps> = ({
                 <Input appearance='header-input' placeholder='Поиск' type='text'/>
                 <SeacrhIcon className={styles.searchIcon}/>
             </InputGroup>
-            <div className={styles.profile}>
+            <Link href="/profile" className={styles.profile}>
                 <ProfileIcon className={styles.profileIcon}/>
                 <span>Профиль</span>
-            </div>
-            <div className={styles.orders}>
+            </Link>
+            <Link href="/orders" className={styles.orders}>
                 <OrdersIcon className={styles.ordersIcon}/>
                 <span>Заказы</span>
-            </div>
-            <div className={styles.cart}>
+            </Link>
+            <Link href="/cart" className={styles.cart}>
                 <CartIcon className={styles.cartIcon}/>
                 <span>Корзина</span>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

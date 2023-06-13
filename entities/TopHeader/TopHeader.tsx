@@ -17,7 +17,7 @@ export const TopHeader: FC<TopHeaderProps> = ({ ...props }): JSX.Element => {
             <nav className={styles.navList}>
               <ul className={styles.list}>
                 <li>
-                  <Link className={styles.link} href="">
+                  <Link className={styles.link} href="/brands">
                     Бренды
                   </Link>
                 </li>

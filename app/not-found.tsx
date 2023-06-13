@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./notFound.module.css";
 import Link from "next/link";
-import { Htag } from '@/shared/Htag/Htag';
-import { Button } from '@/shared/Button/Button';
-
+import { Htag } from "@/shared/Htag/Htag";
+import { Button } from "@/shared/Button/Button";
 
 export default function NotFoundPage({ ...props }): JSX.Element {
   return (
@@ -20,7 +19,6 @@ export default function NotFoundPage({ ...props }): JSX.Element {
           </Button>
         </div>
       </main>
-      ;
     </>
   );
 }
