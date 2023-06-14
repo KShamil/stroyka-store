@@ -17,7 +17,7 @@ import { HomeSliderItems } from "@/features/HomeSliderItems/HomeSliderItems";
 export const HomeSlider: FC<HomeSliderProps> = ({ ...props }): JSX.Element => {
   return (
     <>
-      <section {...props} className={styles.homeSlider}>
+      <section {...props} className={styles.wrapper}>
         <Swiper
           navigation={false}
           modules={[Navigation, Pagination, Autoplay]}
