@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { ButtonGroupProps } from "./ButtonGroup.priops";
+import { ButtonGroupProps } from "./ButtonGroup.props";
 
 export const ButtonGroup: FC<ButtonGroupProps> = ({
   children,

@@ -134,3 +134,62 @@
     color: #171B24;
     white-space: nowrap;
 }
+
+.plusBtn {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #D1D1D3;
+    color: #171B24;
+    background: #FFFFFF;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.minusBtn {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #D1D1D3;
+    color: #171B24;
+    background: #FFFFFF;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.deleteBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 262px;
+    min-height: 48px;
+    border: 1px solid #D1D1D3;
+    color: #171B24;
+    background: #FFFFFF;
+    font-size: 18px;
+    
+}
+
+.resultBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 166px;
+    min-height: 48px;
+    border: 1px solid #D1D1D3;
+    color: #171B24;
+    background: #FFFFFF;
+    font-size: 18px;
+}
+
+.checkoutBtn {
+    width: 246px;
+    min-height: 48px;
+    padding: 12px, 24px, 12px, 24px;
+    background: #FCEC41;
+    color: #171B24;
+    border: none;
+    font-size: 18px;
+}

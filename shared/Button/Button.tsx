@@ -17,6 +17,11 @@ export const Button: FC<ButtonProps> = ({ className,appearance,...props }): JSX.
         [styles.loadMoreBtn]:appearance == 'load-more-btn',
         [styles.documentationCardBtn]:appearance == 'documentation-card-btn',
         [styles.notFoundBtn]:appearance == 'not-found-btn',
+        [styles.plusBtn]:appearance == 'plus-btn',
+        [styles.minusBtn]:appearance == 'minus-btn',
+        [styles.deleteBtn]:appearance == 'delete-btn',
+        [styles.resultBtn]:appearance == 'result-btn',
+        [styles.checkoutBtn]:appearance == 'checkout-btn',
       })}
     ></button>
   );

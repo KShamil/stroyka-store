@@ -1,4 +1,5 @@
 .wrapper {
+    position: relative;
     width: 100%;
     min-height: 80px;
     display: flex;
@@ -46,10 +47,31 @@
     height: 24px;
 }
 
+
 .cataloqIcon,
 .profileIcon,
 .ordersIcon,
 .cartIcon {
     width: 24px;
     height: 24px;
+}
+
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+@media screen and (max-width:1024px) {
+    .input {
+        width: 248px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .searchIcon {
+        display: none;
+    }
 }

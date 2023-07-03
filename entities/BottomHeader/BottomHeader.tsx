@@ -2,6 +2,9 @@ import React, { FC } from "react";
 import { BottomHeaderProps } from "./BottomHeader.props";
 import styles from "./BottomHeader.module.css";
 import Link from "next/link";
+import { InputGroup } from "@/shared/InputGroup/InputGroup";
+import { Input } from "@/shared/Input/Input";
+import SearchIcon from "./searchIcon.svg";
 
 export const BottomHeader: FC<BottomHeaderProps> = ({
   ...props
@@ -15,7 +18,8 @@ export const BottomHeader: FC<BottomHeaderProps> = ({
               <Link href="" className={styles.link}></Link>Акции
             </li>
             <li>
-              <Link href="" className={styles.link}></Link>Строительные материалы
+              <Link href="" className={styles.link}></Link>Строительные
+              материалы
             </li>
             <li>
               <Link href="" className={styles.link}></Link>Керамическая плитка
@@ -40,6 +44,10 @@ export const BottomHeader: FC<BottomHeaderProps> = ({
             </li>
           </ul>
         </div>
+        <InputGroup>
+          <Input appearance="bottom-header-input" placeholder="Поиск" type="text" />
+          <SearchIcon className={styles.searchIcon} />
+        </InputGroup>
       </div>
     </>
   );

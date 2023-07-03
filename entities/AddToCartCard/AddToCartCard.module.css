@@ -1,0 +1,58 @@
+.wrapper {
+    width: 866px;
+    min-height: 208px;
+    border: 1px solid #E8E9EA;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img {
+    width: 278px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    width: 588px;
+    height: 208px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 16px;
+    border-left: 1px solid #E8E9EA;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+    font-size: 16px;
+}
+
+.title p {
+    width: 262px;
+    
+}
+
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.addCartBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

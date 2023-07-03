@@ -23,10 +23,22 @@
     position: absolute;
     left: 100px;
     top: 176px;
+    margin-top: 20px;
 }
 
 .btn {
     position: absolute;
     left: 100px;
     bottom:40px;
+}
+
+
+@media screen and (max-width:1024px) {
+    .title {
+        width: 50%;
+    }
+
+    .description {
+        width: 22%;
+    }
 }

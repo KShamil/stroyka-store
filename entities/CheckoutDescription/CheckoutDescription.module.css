@@ -1,0 +1,24 @@
+.wrapper {
+    width: 278px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 15px;
+    color: #454950;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
