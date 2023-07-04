@@ -17,3 +17,10 @@
     gap: 16px;
     align-items: stretch;
 }
+
+
+@media screen and (max-width:1200px){
+    .content {
+        width: 100%;
+    }
+}

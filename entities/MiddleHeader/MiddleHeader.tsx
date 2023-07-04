@@ -14,15 +14,19 @@ import { InputGroup } from "@/shared/InputGroup/InputGroup";
 import { Input } from "@/shared/Input/Input";
 import Link from "next/link";
 import { ProfileModal } from "@/features/ProfileModal/ProfileModal";
+import { useSelector } from "react-redux";
+import { RootState } from "@/store/store";
 
 export const MiddleHeader: FC<MiddleHeaderProps> = ({
   ...props
 }): JSX.Element => {
-  const [openModal,setOpenModal] = useState<boolean>(false);
+  const cartItems = useSelector((state: RootState) => state.cart.items);
+  const totalItems = cartItems.length;
+  const [openModal, setOpenModal] = useState<boolean>(false);
 
   const handleOpenModal = () => {
-    setOpenModal(prev => prev = !prev);
-  }
+    setOpenModal((prev) => (prev = !prev));
+  };
   return (
     <>
       <div {...props} className={styles.wrapper}>
@@ -54,10 +58,13 @@ export const MiddleHeader: FC<MiddleHeaderProps> = ({
             <Link href="/cart" className={styles.cart}>
               <CartIcon className={styles.cartIcon} />
               <span>Корзина</span>
+              {totalItems > 0 && (
+                <span className={styles.badge}>{totalItems}</span>
+              )}
             </Link>
           </div>
         </div>
-        {openModal && <ProfileModal className={styles.modal}/>}
+        {openModal && <ProfileModal className={styles.modal} />}
       </div>
     </>
   );
