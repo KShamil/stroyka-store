@@ -67,6 +67,12 @@
     font-size: 18px;
     color: #171B24;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.allStockBtn:hover {
+    background: #2F323A;
+    color: #FFFFFF;
 }
 
 .loadMoreBtn {
@@ -169,7 +175,7 @@
     color: #171B24;
     background: #FFFFFF;
     font-size: 18px;
-    
+
 }
 
 .resultBtn {
@@ -192,4 +198,14 @@
     color: #171B24;
     border: none;
     font-size: 18px;
+}
+
+.mainCardResultBtn {
+    width: 150px;
+    min-height: 48px;
+    border: 1px solid #D1D1D3;
+    background: #FFFFFF;
+    color: #171B24;
+    font-size: 18px;
+    font-weight: 500;
 }

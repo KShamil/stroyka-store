@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React, { FC } from "react";
 import { AddToCartCardProps } from "./AddToCartCard.props";
@@ -7,8 +7,8 @@ import Image from "next/image";
 import { ButtonGroup } from "@/shared/ButtonGroup/ButtonGroup";
 import { Button } from "@/shared/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
-import { removeItem } from "@/slice/cartSlice";
-import { RootState } from '@/store/store';
+import { addItem, removeAllItems, removeItem } from "@/slice/cartSlice";
+import { RootState } from "@/store/store";
 
 export const AddToCartCard: FC<AddToCartCardProps> = ({
   product,
@@ -16,11 +16,20 @@ export const AddToCartCard: FC<AddToCartCardProps> = ({
 }): JSX.Element => {
   const { id, img, title, price } = product;
   const dispatch = useDispatch();
+  const handleAddToCart = (id: string) => {
+    dispatch(addItem(product));
+  };
   const handleRemoveFromCart = (id: string) => {
     dispatch(removeItem(id));
   };
+  const handleRemoveAllFromCart = (id: string) => {
+    dispatch(removeAllItems(id));
+  };
   const cartItems = useSelector((state: RootState) => state.cart.items);
-  const totalItems = cartItems.length
+  const getItemQuantity = () => {
+    const cartItem = cartItems.find((item) => item.id === product.id);
+    return cartItem ? cartItem.quantity : 0;
+  };
   return (
     <>
       <div {...props} className={styles.wrapper} key={id}>
@@ -39,13 +48,20 @@ export const AddToCartCard: FC<AddToCartCardProps> = ({
           </div>
           <div className={styles.buttons}>
             <ButtonGroup className={styles.addCartBtn}>
-              <Button appearance="plus-btn">+</Button>
-              <Button appearance="result-btn">{totalItems}</Button>
-              <Button appearance="minus-btn">-</Button>
+              <Button appearance="plus-btn" onClick={() => handleAddToCart(id)}>
+                +
+              </Button>
+              <Button appearance="result-btn">{getItemQuantity()}</Button>
+              <Button
+                appearance="minus-btn"
+                onClick={() => handleRemoveFromCart(id)}
+              >
+                -
+              </Button>
             </ButtonGroup>
             <Button
               appearance="delete-btn"
-              onClick={() => handleRemoveFromCart(id)}
+              onClick={() => handleRemoveAllFromCart(id)}
             >
               Удалить товар
             </Button>

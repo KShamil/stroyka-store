@@ -40,3 +40,14 @@
     right: 16px;
     bottom: 16px;
 }
+
+.btnGroup {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s all;
+}

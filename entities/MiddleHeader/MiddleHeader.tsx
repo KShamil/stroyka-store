@@ -21,7 +21,7 @@ export const MiddleHeader: FC<MiddleHeaderProps> = ({
   ...props
 }): JSX.Element => {
   const cartItems = useSelector((state: RootState) => state.cart.items);
-  const totalItems = cartItems.length;
+  const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
   const [openModal, setOpenModal] = useState<boolean>(false);
 
   const handleOpenModal = () => {
@@ -35,7 +35,7 @@ export const MiddleHeader: FC<MiddleHeaderProps> = ({
             <LogoIcon className={styles.logo} />
           </div>
           <div className={styles.right}>
-            <Button appearance="cataloq-btn">
+            <Button appearance="cataloq-btn" className={styles.cataloq}>
               <CataloqBtnIcon className={styles.cataloqIcon} />
               Каталог
             </Button>

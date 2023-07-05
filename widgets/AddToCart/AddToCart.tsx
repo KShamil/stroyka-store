@@ -6,18 +6,20 @@ import styles from "./AddToCart.module.css";
 import { CheckoutCard } from "@/entities/CheckoutCard/CheckoutCard";
 import { AddToCartCard } from "@/entities/AddToCartCard/AddToCartCard";
 import { CheckoutDescription } from "@/entities/CheckoutDescription/CheckoutDescription";
-import { addItem, removeItem } from "@/slice/cartSlice";
-import { ICardData } from "@/interfaces/interfaces";
 import { RootState } from "@/store/store";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
+import { Htag } from "@/shared/Htag/Htag";
 
 export const AddToCart: FC<AddToCartProps> = ({ ...props }): JSX.Element => {
-  const dispatch = useDispatch();
   const items = useSelector((state: RootState) => state.cart.items);
 
-  const handleAddToCart = (item: ICardData) => {
-    dispatch(addItem(item));
-  };
+  if (items.length === 0) {
+    return (
+      <div className={styles.empty}>
+        <Htag tag="h1">Корзина пустая, пожалуйста совершите покупку</Htag>
+      </div>
+    );
+  }
   return (
     <>
       <section {...props} className={styles.wrapper}>

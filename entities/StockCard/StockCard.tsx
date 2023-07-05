@@ -1,14 +1,23 @@
+'use client'
+
 import React, { FC } from "react";
 import { StockCardProps } from "./StockCard.props";
 import styles from "./StockCard.module.css";
 import Image from "next/image";
 import { Button } from '@/shared/Button/Button';
+import { useDispatch } from 'react-redux';
+import { addItem } from '@/slice/cartSlice';
 
 export const StockCard: FC<StockCardProps> = ({
   data,
   ...props
 }): JSX.Element => {
   const { img, title, price, discount, link } = data;
+  const dispatch = useDispatch();
+  const handleAddItem = () => {
+    dispatch(addItem(data));
+  };
+
   return (
     <>
       <div {...props} className={styles.wrapper}>
@@ -22,7 +31,7 @@ export const StockCard: FC<StockCardProps> = ({
             <span className={styles.currentPrice}>{price}</span>
             <span className={styles.discount}>{discount}</span>
           </div>
-          <Button appearance="stock-add-to-cart" className={styles.btn}>{link}</Button>
+          <Button appearance="stock-add-to-cart" className={styles.btn} onClick={handleAddItem}>{link}</Button>
         </div>
       </div>
     </>

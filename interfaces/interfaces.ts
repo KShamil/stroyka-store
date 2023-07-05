@@ -5,7 +5,11 @@ export interface ICardData {
     img: StaticImageData,
     title: string,
     price: number,
-    link: string
+    discount:string
+    link: string,
+    stock:boolean,
+    quantity: number;
+    
 }
 
 export interface IHomeSliderData {
@@ -24,15 +28,6 @@ export interface IPopularCategoriesData {
 
 export interface IPOpularBrendsData {
     img:StaticImageData
-}
-
-export interface IStockCardData {
-    id:string,
-    img:StaticImageData,
-    title:string,
-    price:number,
-    discount:string,
-    link:string
 }
 
 export interface IReviewsCardData {

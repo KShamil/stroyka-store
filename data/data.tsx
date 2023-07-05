@@ -6,7 +6,6 @@ import {
   IPOpularBrendsData,
   IPopularCategoriesData,
   IReviewsCardData,
-  IStockCardData,
 } from "@/interfaces/interfaces";
 import { v4 as uuidv4 } from "uuid";
 import CardImg1 from "./images/card-img/Image.png";
@@ -69,84 +68,160 @@ export const cardData: ICardData[] = [
     img: CardImg1,
     title: "Керамогранит Yasmin 598х185 коричневый C-YA4M112D",
     price: 899,
+    discount:"",
     link: "В корзину",
+    stock:false,
+    quantity:0
   },
   {
     id: uuidv4(),
     img: CardImg2,
     title: "Затирка для узких швов Ceresit СЕ 33, цвет белый, 2 кг",
     price: 275,
+    discount:"",
     link: "В корзину",
+    stock:false,
+    quantity:0
   },
   {
     id: uuidv4(),
     img: CardImg3,
     title: "Грунтовка Старатели 10л глубокого проникновения",
     price: 839,
+    discount:"",
     link: "В корзину",
+    stock:false,
+    quantity:0
   },
   {
     id: uuidv4(),
     img: CardImg4,
     title: "Гипсокартон Волма, 2500 х 1200 х 12,5 мм",
     price: 335,
+    discount:"",
     link: "В корзину",
+    stock:false,
+    quantity:0
   },
   {
     id: uuidv4(),
     img: CardImg5,
     title: "Профиль 0,55мм для гипсокартона",
     price: 195,
+    discount:"",
     link: "В корзину",
+    stock:false,
+    quantity:0
   },
   {
     id: uuidv4(),
     img: CardImg6,
     title: "Рулетка 3м",
     price: 100,
+    discount:"",
     link: "В корзину",
+    stock:false,
+    quantity:0
   },
   {
     id: uuidv4(),
     img: CardImg7,
     title: "Кнауф Мп 75 штукатурка гипсовая МН 30кг",
     price: 380,
+    discount:"",
     link: "В корзину",
+    stock:false,
+    quantity:0
   },
   {
     id: uuidv4(),
     img: CardImg8,
     title: "Уголок серый канализационный Д110 ГР90",
     price: 335,
+    discount:"",
     link: "В корзину",
+    stock:false,
+    quantity:0
   },
   {
     id: uuidv4(),
     img: CardImg9,
     title: "Knauf Ротбанд, 30 кг",
     price: 508,
+    discount:"",
     link: "В корзину",
+    stock:false,
+    quantity:0
   },
   {
     id: uuidv4(),
     img: CardImg10,
     title: "Саморез по металлу 3,5х25 мм для гипсокартона",
     price: 340,
+    discount:"",
     link: "В корзину",
+    stock:false,
+    quantity:0
   },
   {
     id: uuidv4(),
     img: CardImg11,
     title: "Шпатлевка универсальная Danogips SuperFinish 17 л",
     price: 2.555,
+    discount:"",
     link: "В корзину",
+    stock:false,
+    quantity:0
   },
   {
     id: uuidv4(),
     img: CardImg12,
     title: "Клейкая лента металлизированная Изоспан FL 5х5000 см",
     price: 226,
+    discount:"",
     link: "В корзину",
+    stock:false,
+    quantity:0
+  },
+  {
+    id: uuidv4(),
+    img: SctockCardImg1,
+    title: "Рубероид РКП-350 ТУ, размер материала 1 х 10 м (10м2, 1 рулон)",
+    price: 449,
+    discount: "499 ₽",
+    link: "В корзину",
+    stock:true,
+    quantity:0
+  },
+  {
+    id: uuidv4(),
+    img: SctockCardImg2,
+    title: "Пена монтажная ТЕХНОНИКОЛЬ MASTER 65 профессиональная всесезонная",
+    price: 495,
+    discount: "660 ₽",
+    link: "В корзину",
+    stock:true,
+    quantity:0
+  },
+  {
+    id: uuidv4(),
+    img: SctockCardImg3,
+    title: 'Сетка "Рабица" яч. 50х50/1,5х10 м-ОЦ',
+    price: 1.499,
+    discount: "1 890 ₽",
+    link: "В корзину",
+    stock:true,
+    quantity:0
+  },
+  {
+    id: uuidv4(),
+    img: SctockCardImg4,
+    title: "Металлочерепица, цвет коричневый, 1.18 х 1.15 м",
+    price: 769,
+    discount: "999 ₽",
+    link: "В корзину",
+    stock:true,
+    quantity:0
   },
 ];
 
@@ -270,40 +345,6 @@ export const popularBrendsData: IPOpularBrendsData[] = [
   },
 ];
 
-export const stockCardData: IStockCardData[] = [
-  {
-    id: uuidv4(),
-    img: SctockCardImg1,
-    title: "Рубероид РКП-350 ТУ, размер материала 1 х 10 м (10м2, 1 рулон)",
-    price: 449,
-    discount: "499 ₽",
-    link: "В корзину",
-  },
-  {
-    id: uuidv4(),
-    img: SctockCardImg2,
-    title: "Пена монтажная ТЕХНОНИКОЛЬ MASTER 65 профессиональная всесезонная",
-    price: 495,
-    discount: "660 ₽",
-    link: "В корзину",
-  },
-  {
-    id: uuidv4(),
-    img: SctockCardImg3,
-    title: 'Сетка "Рабица" яч. 50х50/1,5х10 м-ОЦ',
-    price: 1.499,
-    discount: "1 890 ₽",
-    link: "В корзину",
-  },
-  {
-    id: uuidv4(),
-    img: SctockCardImg4,
-    title: "Металлочерепица, цвет коричневый, 1.18 х 1.15 м",
-    price: 769,
-    discount: "999 ₽",
-    link: "В корзину",
-  },
-];
 
 export const reviewsCardData: IReviewsCardData[] = [
   {

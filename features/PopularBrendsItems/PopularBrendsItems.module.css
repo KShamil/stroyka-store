@@ -30,3 +30,11 @@
     flex-wrap: wrap;
     gap: 16px;
 }
+
+.icon {
+    transition: 0.3s all;
+}
+
+.btn:hover .icon {
+    --icon-color:#FFFFFF;
+}

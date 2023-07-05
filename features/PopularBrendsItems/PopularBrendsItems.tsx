@@ -16,9 +16,9 @@ export const PopularBrendsItems: FC<PopularBrendsItemsProps> = ({
         <div className={styles.content}>
           <div className={styles.top}>
             <Htag tag="h2">Популярные бренды</Htag>
-            <Button appearance="all-stock">
+            <Button appearance="all-stock" className={styles.btn}>
               Все бренды
-              <ArrowIcon />
+              <ArrowIcon className={styles.icon}/>
             </Button>
           </div>
           <div className={styles.bottom}>

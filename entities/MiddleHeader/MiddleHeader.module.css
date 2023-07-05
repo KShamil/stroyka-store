@@ -56,6 +56,14 @@
     height: 24px;
 }
 
+.cataloqIcon {
+    transition: all 0.3s;
+}
+
+.cataloqBtn:hover .cataloqIcon {
+    --icon-color:white;
+}
+
 
 .modal {
     position: absolute;
@@ -93,4 +101,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
 }

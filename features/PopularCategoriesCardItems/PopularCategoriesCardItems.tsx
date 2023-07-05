@@ -17,9 +17,9 @@ export const PopularCategoriesCardItems: FC<
         <div className={styles.content}>
           <div className={styles.top}>
             <Htag tag="h2">Популярные категории</Htag>
-            <Button appearance="all-stock">
+            <Button appearance="all-stock" className={styles.btn}>
               Все категории
-              <ArrowIcon />
+              <ArrowIcon className={styles.icon}/>
             </Button>
           </div>
           <div className={styles.bottom}>

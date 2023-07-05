@@ -9,8 +9,8 @@ export const CheckoutCard: FC<CheckoutCardProps> = ({
   ...props
 }): JSX.Element => {
   const cartItems = useSelector((state: RootState) => state.cart.items);
-  const totalItems = cartItems.length
-  const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
+  const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
+  const totalPrice = cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
   return (
     <>
       <div {...props} className={styles.wrapper}>
