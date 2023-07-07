@@ -35,7 +35,7 @@ export const MiddleHeader: FC<MiddleHeaderProps> = ({
             <LogoIcon className={styles.logo} />
           </div>
           <div className={styles.right}>
-            <Button appearance="cataloq-btn" className={styles.cataloq}>
+            <Button appearance="cataloq-btn" className={styles.cataloqBtn}>
               <CataloqBtnIcon className={styles.cataloqIcon} />
               Каталог
             </Button>

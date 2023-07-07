@@ -23,6 +23,7 @@ export const Button: FC<ButtonProps> = ({ className,appearance,...props }): JSX.
         [styles.resultBtn]:appearance == 'result-btn',
         [styles.checkoutBtn]:appearance == 'checkout-btn',
         [styles.mainCardResultBtn]:appearance == 'main-card-result-btn',
+        [styles.detailsResultBtn]:appearance == 'details-result-btn',
       })}
     ></button>
   );

@@ -4,7 +4,7 @@ import { MakeAnOrder } from '@/widgets/MakeAnOrder/MakeAnOrder';
 import { Metadata } from 'next';
 
 export const metadata:Metadata = {
-  title: "Доставка",
+  title: "Stroyka-store - Доставка",
 };
 
 export default function DeliveryPage(): JSX.Element {

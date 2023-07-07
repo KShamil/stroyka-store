@@ -8,13 +8,14 @@ import { Button } from "@/shared/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { addItem, removeItem } from "@/slice/cartSlice";
 import { ButtonGroup } from "@/shared/ButtonGroup/ButtonGroup";
-import { RootState } from '@/store/store';
+import { RootState } from "@/store/store";
+import Link from "next/link";
 
 export const ProductCard: FC<ProductCardProps> = ({
   data,
   ...props
 }): JSX.Element => {
-  const { id,img, title, price, link } = data;
+  const { id, img, title, price, link } = data;
   const dispatch = useDispatch();
   const handleAddToCart = () => {
     dispatch(addItem(data));
@@ -35,16 +36,20 @@ export const ProductCard: FC<ProductCardProps> = ({
 
   const button = isActiveBtn ? (
     <ButtonGroup className={styles.btnGroup}>
-      <Button appearance="plus-btn" onClick={handleAddToCart}>+</Button>
+      <Button appearance="plus-btn" onClick={handleAddToCart}>
+        +
+      </Button>
       <Button appearance="main-card-result-btn">{getItemQuantity()}</Button>
-      <Button appearance="minus-btn" onClick={()=> handleRemoveFromCart(id)}>-</Button>
+      <Button appearance="minus-btn" onClick={() => handleRemoveFromCart(id)}>
+        -
+      </Button>
     </ButtonGroup>
   ) : (
     <Button
       className={styles.btn}
       appearance="cards-add-to-cart"
       onClick={() => {
-        handleActiveBtn(); 
+        handleActiveBtn();
       }}
     >
       {link}
@@ -53,7 +58,9 @@ export const ProductCard: FC<ProductCardProps> = ({
   return (
     <div {...props} className={styles.wrapper}>
       <div className={styles.image}>
-        <Image src={img} alt="error" />
+        <Link href={`/details/${id}`}>
+          <Image src={img} alt="error" />
+        </Link>
       </div>
       <div className={styles.info}>
         <span className={styles.title}>{title}</span>

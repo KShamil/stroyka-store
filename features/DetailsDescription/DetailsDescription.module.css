@@ -1,0 +1,16 @@
+.wrapper {
+    width: 100%;
+    border: 1px solid #E8E9EA;
+    padding: 60px 200px 60px 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.wrapper h3 {
+    color: #171B24;
+    font-size: 44px;
+    font-weight: bold;
+}
