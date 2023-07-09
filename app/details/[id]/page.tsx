@@ -4,8 +4,11 @@ import { cardData } from "@/data/data";
 import styles from "./Details.module.css";
 import { DetailsCard } from "@/entities/DetailsCard/DetailsCard";
 import { DetailsDescription } from "@/features/DetailsDescription/DetailsDescription";
-import { DetailsProps } from "./Details.props";
 import { SimilarProducts } from "@/widgets/SimilarProducts/SimilarProducts";
+
+interface DetailsProps {
+  params: { id: string };
+}
 
 export default function DetailsPage({
   params: { id },
