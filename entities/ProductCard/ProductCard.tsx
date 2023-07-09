@@ -15,7 +15,7 @@ export const ProductCard: FC<ProductCardProps> = ({
   data,
   ...props
 }): JSX.Element => {
-  const { id, img, title, price, link } = data;
+  const { id, img, title, price, discount, link } = data;
   const dispatch = useDispatch();
   const handleAddToCart = () => {
     dispatch(addItem(data));
@@ -64,7 +64,10 @@ export const ProductCard: FC<ProductCardProps> = ({
       </div>
       <div className={styles.info}>
         <span className={styles.title}>{title}</span>
-        <span className={styles.price}>{price}₽</span>
+        <div className={styles.priceGroup}>
+          <span className={styles.price}>{price}₽</span>
+          <s>{discount}</s>
+        </div>
         {button}
       </div>
     </div>

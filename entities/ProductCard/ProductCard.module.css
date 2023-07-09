@@ -26,10 +26,24 @@
     word-wrap: break-word;
 }
 
-.price {
+.priceGroup {
     position: absolute;
     left: 16px;
     bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.priceGroup s {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    color: #8B8D92;
+}
+
+.price {
     font-weight: 700;
     font-size: 20px;
     color: #171B24;

@@ -20,6 +20,10 @@ import CardImg9 from "./images/card-img/Image (8).png";
 import CardImg10 from "./images/card-img/Image (9).png";
 import CardImg11 from "./images/card-img/Image (10).png";
 import CardImg12 from "./images/card-img/Image (11).png";
+import CardImg13 from "./images/card-img/Image13.png";
+import CardImg14 from "./images/card-img/Image14.png";
+import CardImg15 from "./images/card-img/Image15.png";
+import CardImg16 from "./images/card-img/Image16.png";
 import HomeSliderImg1 from "./images/home-slider-img/image 52.png";
 import HomeSliderImg2 from "./images/home-slider-img/image 51.png";
 import PopularCategoriesImg1 from "./images/popular-categories-img/image 56.png";
@@ -223,6 +227,46 @@ export const cardData: ICardData[] = [
     stock:true,
     quantity:0
   },
+  {
+    id: uuidv4(),
+    img: CardImg13,
+    title: "Штукатурка Гипсовая Weber.Vetonit Profi Gyps Белая 30кг",
+    price: 444,
+    discount:"510 ₽",
+    link: "В корзину",
+    stock:false,
+    quantity:0
+  },
+  {
+    id: uuidv4(),
+    img: CardImg14,
+    title: "Белый Цемент Holcim DecoCEM 500 50 Кг",
+    price: 1.377,
+    discount:"",
+    link: "В корзину",
+    stock:false,
+    quantity:0
+  },
+  {
+    id: uuidv4(),
+    img: CardImg15,
+    title: "Гипс Русеан Г-16 40 Кг",
+    price: 714,
+    discount:"",
+    link: "В корзину",
+    stock:false,
+    quantity:0
+  },
+  {
+    id: uuidv4(),
+    img: CardImg16,
+    title: "Грунтовка Глубокого Проникновения Старатели 10 Л",
+    price: 648,
+    discount:"663 ₽",
+    link: "В корзину",
+    stock:false,
+    quantity:0
+  }
 ];
 
 export const homeSliderData: IHomeSliderData[] = [

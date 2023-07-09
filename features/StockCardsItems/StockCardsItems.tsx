@@ -23,7 +23,7 @@ export const StockCardsItems: FC<StockCardsItemsProps> = ({
                 </Button>
             </div>
             <div className={styles.bottom}>
-                {cardData && cardData.filter(item => item.stock === true).map(item => (
+                {cardData && cardData.filter(item => item.discount !== '').slice(0,4).map(item => (
                   <StockCard key={item.id} data={item}/>
                 ))}
             </div>
