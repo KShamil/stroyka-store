@@ -57,3 +57,32 @@
     color: #D1D1D3;
 
 }
+
+.profileBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.profileBtn:hover {
+    background: none;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.modalBody {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

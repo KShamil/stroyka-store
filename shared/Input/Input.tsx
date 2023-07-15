@@ -7,7 +7,9 @@ export const Input:FC<InputProps> = ({className,appearance,...props}):JSX.Elemen
   return (
     <input {...props} className={cn(styles.input, className, {
         [styles.headerInput]:appearance == 'header-input',
-        [styles.bottomHeaderInput]:appearance == 'bottom-header-input'
+        [styles.bottomHeaderInput]:appearance == 'bottom-header-input',
+        [styles.infoInput]:appearance == 'info-input',
+        [styles.emailInput]:appearance == 'email-input',
     })}></input>
   )
 }

@@ -40,3 +40,42 @@
         display: none;
     }
 }
+
+.infoInput {
+    width: 100%;
+    height: auto;
+    padding: 12px 16px;
+    border-bottom: 1px solid #D1D1D3;
+    background: #F6F6F6;
+}
+
+.infoInput::placeholder {
+    color: #8B8D92;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 136%;
+}
+
+.infoInput:focus {
+    outline: none;
+}
+
+.emailInput {
+    width: 100%;
+    height: auto;
+    padding: 12px 16px;
+    border-bottom: 1px solid #D1D1D3;
+    background: #F6F6F6;
+}
+
+.emailInput:focus {
+    outline: none;
+}
+
+.emailInput::placeholder {
+    color: #8B8D92;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 136%;
+}
+

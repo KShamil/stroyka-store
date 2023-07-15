@@ -221,3 +221,48 @@
     justify-content: center;
     align-items: center;
 }
+
+.saveBtn {
+    width: 143px;
+    min-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--yellow);
+    border: none;
+    transition: 0.3s all;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 24px;
+}
+
+.saveBtn:hover {
+    background: #2F323A;
+    color: #FFFFFF;
+}
+
+.createBtn {
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    background: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #D1D1D3;
+}
+
+.signInBtn {
+    width: 100%;
+    min-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    background: var(--yellow);
+    font-size: 18px;
+    font-weight: 500;
+    border: none; 
+}

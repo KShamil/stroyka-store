@@ -1,14 +1,15 @@
-import { Metadata } from 'next';
-import styles from './Profile.module.css';
+import { Metadata } from "next";
+import styles from "./Profile.module.css";
+import { Profile } from "@/widgets/Profile/Profile";
 
-export const metadata:Metadata = {
-    title: "Профиль",
-  };
-  
-  export default function ProfilePage(): JSX.Element {
-    return (
-      <main className={styles.wrapper}>
-        
-      </main>
-    );
-  }
+export const metadata: Metadata = {
+  title: "Профиль",
+};
+
+export default async function ProfilePage() {
+  return (
+    <main className={styles.main}>
+      <Profile />
+    </main>
+  );
+}

@@ -13,7 +13,7 @@ import { Button } from "@/shared/Button/Button";
 import { InputGroup } from "@/shared/InputGroup/InputGroup";
 import { Input } from "@/shared/Input/Input";
 import Link from "next/link";
-import { ProfileModal } from "@/features/ProfileModal/ProfileModal";
+import { ProfileModal } from "@/widgets/ProfileModal/ProfileModal";
 import { useSelector } from "react-redux";
 import { RootState } from "@/store/store";
 
@@ -21,12 +21,11 @@ export const MiddleHeader: FC<MiddleHeaderProps> = ({
   ...props
 }): JSX.Element => {
   const cartItems = useSelector((state: RootState) => state.cart.items);
-  const totalItems = cartItems.reduce((total, item) => total + item.quantity, 0);
-  const [openModal, setOpenModal] = useState<boolean>(false);
+  const totalItems = cartItems.reduce(
+    (total, item) => total + item.quantity,
+    0
+  );
 
-  const handleOpenModal = () => {
-    setOpenModal((prev) => (prev = !prev));
-  };
   return (
     <>
       <div {...props} className={styles.wrapper}>
@@ -47,10 +46,7 @@ export const MiddleHeader: FC<MiddleHeaderProps> = ({
               />
               <SeacrhIcon className={styles.searchIcon} />
             </InputGroup>
-            <Link href="" className={styles.profile} onClick={handleOpenModal}>
-              <ProfileIcon className={styles.profileIcon} />
-              <span>Профиль</span>
-            </Link>
+            <ProfileModal className={styles.modal} />
             <Link href="/orders" className={styles.orders}>
               <OrdersIcon className={styles.ordersIcon} />
               <span>Заказы</span>
@@ -64,7 +60,6 @@ export const MiddleHeader: FC<MiddleHeaderProps> = ({
             </Link>
           </div>
         </div>
-        {openModal && <ProfileModal className={styles.modal} />}
       </div>
     </>
   );
