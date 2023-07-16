@@ -67,3 +67,12 @@
     color: #171B24;
 
 }
+
+.groupBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}

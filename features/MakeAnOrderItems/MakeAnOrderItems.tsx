@@ -2,8 +2,8 @@ import React, { FC } from "react";
 import { MakeAnOrderItemsProps } from "./MakeAnOrderItems.props";
 import styles from "./MakeAnOrderItems.module.css";
 import { orderCardData } from "@/data/data";
-import { OrderCard } from '@/entities/OrderCard/OrderCard';
 import { Htag } from '@/shared/Htag/Htag';
+import { OrderBox } from '@/entities/OrderBox/OrderBox';
 
 
 export const MakeAnOrderItems: FC<MakeAnOrderItemsProps> = ({
@@ -19,7 +19,7 @@ export const MakeAnOrderItems: FC<MakeAnOrderItemsProps> = ({
           <div className={styles.bottom}>
             {orderCardData &&
               orderCardData.map((item) => (
-                <OrderCard key={item.id} data={item} />
+                <OrderBox key={item.id} data={item} />
               ))}
           </div>
         </div>

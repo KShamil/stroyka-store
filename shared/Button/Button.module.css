@@ -266,3 +266,15 @@
     font-weight: 500;
     border: none; 
 }
+
+.stockResultBtn {
+    width: 166px;
+    height: 48px;
+    border: 1px solid #D1D1D3;
+    color: #171B24;
+    background: #FFFFFF;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

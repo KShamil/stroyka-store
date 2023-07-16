@@ -1,26 +1,55 @@
 "use client";
 
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 import { StockCardProps } from "./StockCard.props";
 import styles from "./StockCard.module.css";
 import Image from "next/image";
 import { Button } from "@/shared/Button/Button";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem } from "@/slice/cartSlice";
+import { addItem, removeItem } from "@/slice/cartSlice";
 import Link from "next/link";
-import { RootState } from '@/store/store';
+import { RootState } from "@/store/store";
+import { ButtonGroup } from "@/shared/ButtonGroup/ButtonGroup";
 
 export const StockCard: FC<StockCardProps> = ({
   data,
   ...props
 }): JSX.Element => {
   const { id, img, title, price, discount, link } = data;
-  const cartItems = useSelector((state: RootState) => state.cart.items);
-  const cartItem = cartItems.find((item) => item.id === data.id);
   const dispatch = useDispatch();
   const handleAddItem = () => {
     dispatch(addItem(data));
   };
+  const handleRemoveFromCart = (id: string) => {
+    dispatch(removeItem(id));
+  };
+  const cartItems = useSelector((state: RootState) => state.cart.items);
+  const getItemQuantity = () => {
+    const cartItem = cartItems.find((item) => item.id === data.id);
+    return cartItem ? cartItem.quantity : 0;
+  };
+
+  const [activeBtn, setActiveBtn] = useState<boolean>(false);
+
+  const handleActiveBtn = () => {
+    setActiveBtn(true);
+  };
+
+  const button = activeBtn ? (
+    <ButtonGroup className={styles.groupBtn}>
+      <Button appearance="plus-btn" onClick={handleAddItem}>+</Button>
+      <Button appearance="stock-result-btn">{getItemQuantity()}</Button>
+      <Button appearance="minus-btn" onClick={() => handleRemoveFromCart(id)}>-</Button>
+    </ButtonGroup>
+  ) : (
+    <Button
+      appearance="stock-add-to-cart"
+      className={styles.btn}
+      onClick={handleActiveBtn}
+    >
+      {link}
+    </Button>
+  );
 
   return (
     <>
@@ -35,13 +64,7 @@ export const StockCard: FC<StockCardProps> = ({
             <span className={styles.currentPrice}>{price}</span>
             <span className={styles.discount}>{discount}</span>
           </div>
-          <Button
-            appearance="stock-add-to-cart"
-            className={styles.btn}
-            onClick={handleAddItem}
-          >
-            {link}
-          </Button>
+          {button}
         </div>
       </div>
     </>

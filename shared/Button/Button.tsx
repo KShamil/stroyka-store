@@ -21,6 +21,7 @@ export const Button: FC<ButtonProps> = ({ className,appearance,...props }): JSX.
         [styles.minusBtn]:appearance == 'minus-btn',
         [styles.deleteBtn]:appearance == 'delete-btn',
         [styles.resultBtn]:appearance == 'result-btn',
+        [styles.stockResultBtn]:appearance == 'stock-result-btn',
         [styles.checkoutBtn]:appearance == 'checkout-btn',
         [styles.mainCardResultBtn]:appearance == 'main-card-result-btn',
         [styles.detailsResultBtn]:appearance == 'details-result-btn',

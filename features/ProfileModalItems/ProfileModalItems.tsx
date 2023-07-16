@@ -40,7 +40,7 @@ export const ProfileModalItems: FC<ProfileModalItemsProps> = ({
           <div className={styles.buttons}>
             <Button appearance="sign-in-btn">Войти</Button>
             <Button appearance="create-btn" onClick={() => openModal()}>
-              <Link href="#">Создать учетную запись</Link>
+              Создать учетную запись
             </Button>
           </div>
         </form>

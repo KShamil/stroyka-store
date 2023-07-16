@@ -1,0 +1,15 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+    width: 278px;
+    height: 140px;
+}
+
+.wrapper p {
+    font-weight: 500;
+    font-size: 16px;
+    color: #2F323A;
+}
