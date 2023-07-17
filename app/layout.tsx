@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import { Footer } from "../widgets/Footer/Footer";
 import { Header } from "../widgets/Header/Header";
@@ -6,8 +6,9 @@ import "./globals.css";
 import { Manrope, Poppins } from "next/font/google";
 import styles from "./layout.module.css";
 import { Providers } from "./providers";
-import store from "@/store/store";
+import store, { persistor } from "@/store/store";
 import { Provider } from "react-redux/es/exports";
+import { PersistGate } from "redux-persist/integration/react";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -24,9 +25,11 @@ export default function RootLayout({
       <body className={manrope.className}>
         <Providers>
           <Provider store={store}>
-            <Header />
-            <main className={styles.main}>{children}</main>
-            <Footer />
+            <PersistGate loading={null} persistor={persistor}>
+              <Header />
+              <main className={styles.main}>{children}</main>
+              <Footer />
+            </PersistGate>
           </Provider>
         </Providers>
       </body>

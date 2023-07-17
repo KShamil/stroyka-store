@@ -103,3 +103,10 @@
     align-items: center;
     font-size: 12px;
 }
+
+.cataloqLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}

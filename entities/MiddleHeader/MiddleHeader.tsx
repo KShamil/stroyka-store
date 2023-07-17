@@ -6,7 +6,6 @@ import styles from "./MiddleHeader.module.css";
 import LogoIcon from "./logo.svg";
 import CataloqBtnIcon from "./cataloqIcon.svg";
 import SeacrhIcon from "./searchIcon.svg";
-import ProfileIcon from "./profileIcon.svg";
 import OrdersIcon from "./ordersIcon.svg";
 import CartIcon from "./basketIcon.svg";
 import { Button } from "@/shared/Button/Button";
@@ -35,8 +34,10 @@ export const MiddleHeader: FC<MiddleHeaderProps> = ({
           </div>
           <div className={styles.right}>
             <Button appearance="cataloq-btn" className={styles.cataloqBtn}>
-              <CataloqBtnIcon className={styles.cataloqIcon} />
-              Каталог
+              <Link href="/catalog" className={styles.cataloqLink}>
+                <CataloqBtnIcon className={styles.cataloqIcon} />
+                Каталог
+              </Link>
             </Button>
             <InputGroup>
               <Input

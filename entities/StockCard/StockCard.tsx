@@ -62,7 +62,7 @@ export const StockCard: FC<StockCardProps> = ({
           <h6 className={styles.title}>{title}</h6>
           <div className={styles.price}>
             <span className={styles.currentPrice}>{price}</span>
-            <span className={styles.discount}>{discount}</span>
+            <s className={styles.discount}>{discount}</s>
           </div>
           {button}
         </div>

@@ -1,14 +1,15 @@
 "use client";
 
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import { AddToCartProps } from "./AddToCart.props";
 import styles from "./AddToCart.module.css";
 import { CheckoutCard } from "@/entities/CheckoutCard/CheckoutCard";
 import { AddToCartCard } from "@/entities/AddToCartCard/AddToCartCard";
 import { CheckoutDescription } from "@/entities/CheckoutDescription/CheckoutDescription";
 import { RootState } from "@/store/store";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Htag } from "@/shared/Htag/Htag";
+
 
 export const AddToCart: FC<AddToCartProps> = ({ ...props }): JSX.Element => {
   const items = useSelector((state: RootState) => state.cart.items);
