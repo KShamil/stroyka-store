@@ -10,7 +10,7 @@ export const FilterCard: FC<FilterCardProps> = ({ ...props }): JSX.Element => {
     <>
       <div {...props} className={styles.wrapper}>
         <div className={styles.top}>
-          <label htmlFor="">Цена</label>
+          <label htmlFor=""><b>Цена</b></label>
           <div className={styles.inputsGroup}>
             <Input
               appearance="info-input"
@@ -57,7 +57,7 @@ export const FilterCard: FC<FilterCardProps> = ({ ...props }): JSX.Element => {
                 </div>
             </div>
             <div className={styles.provider}>
-                <label htmlFor=""></label>
+                <label htmlFor=""><b>Поставщик</b></label>
                 <Input appearance='info-input' type='text' placeholder='Аксон'></Input>
             </div>
         </div>
