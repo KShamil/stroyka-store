@@ -28,6 +28,8 @@ export const Button: FC<ButtonProps> = ({ className,appearance,...props }): JSX.
         [styles.createBtn]:appearance == 'create-btn',
         [styles.signInBtn]:appearance == 'sign-in-btn',
         [styles.saveBtn]:appearance == 'save-btn',
+        [styles.yellowBtn]:appearance == 'yellow-btn',
+        [styles.whiteBtn]:appearance == 'white-btn',
       })}
     ></button>
   );

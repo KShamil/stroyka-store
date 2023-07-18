@@ -28,7 +28,7 @@
     width: 392px;
     height: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 57px;
     padding: 16px;
@@ -39,4 +39,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
 }
